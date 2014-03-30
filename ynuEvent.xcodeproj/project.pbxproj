@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C2A25A94E4548A98B9C96FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84549C2406614E2A820D3A5E /* libPods.a */; };
+		37054B3218DC6C85008621E7 /* GIPostEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B3018DC6C85008621E7 /* GIPostEventViewController.m */; };
+		37054B3318DC6C85008621E7 /* GIPostEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37054B3118DC6C85008621E7 /* GIPostEventViewController.xib */; };
+		37054B3718DD5034008621E7 /* GITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B3618DD5034008621E7 /* GITableViewCell.m */; };
+		37054B3B18DD5510008621E7 /* GISelectEventPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B3918DD5510008621E7 /* GISelectEventPlaceViewController.m */; };
+		37054B3C18DD5510008621E7 /* GISelectEventPlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37054B3A18DD5510008621E7 /* GISelectEventPlaceViewController.xib */; };
+		37054B7318DD8326008621E7 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6118DD8326008621E7 /* AFHTTPClient.m */; };
+		37054B7418DD8326008621E7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6318DD8326008621E7 /* AFHTTPRequestOperation.m */; };
+		37054B7518DD8326008621E7 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6518DD8326008621E7 /* AFImageRequestOperation.m */; };
+		37054B7618DD8326008621E7 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6718DD8326008621E7 /* AFJSONRequestOperation.m */; };
+		37054B7718DD8326008621E7 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6918DD8326008621E7 /* AFNetworkActivityIndicatorManager.m */; };
+		37054B7818DD8326008621E7 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6C18DD8326008621E7 /* AFPropertyListRequestOperation.m */; };
+		37054B7918DD8326008621E7 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B6E18DD8326008621E7 /* AFURLConnectionOperation.m */; };
+		37054B7A18DD8326008621E7 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B7018DD8326008621E7 /* AFXMLRequestOperation.m */; };
+		37054B7B18DD8326008621E7 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 37054B7218DD8326008621E7 /* UIImageView+AFNetworking.m */; };
+		371C461518DFF608005173E0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371C461418DFF608005173E0 /* StoreKit.framework */; };
+		371C461718E00DED005173E0 /* tools.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C461618E00DED005173E0 /* tools.png */; };
+		371C461E18E0109F005173E0 /* GISettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371C461C18E0109F005173E0 /* GISettingViewController.m */; };
+		371C461F18E0109F005173E0 /* GISettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371C461D18E0109F005173E0 /* GISettingViewController.xib */; };
+		371C462118E01446005173E0 /* bgimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 371C462018E01446005173E0 /* bgimage.png */; };
+		371C462518E04F9C005173E0 /* GIPostTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371C462318E04F9C005173E0 /* GIPostTableViewController.m */; };
+		371C462618E04F9C005173E0 /* GIPostTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371C462418E04F9C005173E0 /* GIPostTableViewController.xib */; };
+		374ADB2518DDABB200A629D0 /* GIDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374ADB2318DDABB200A629D0 /* GIDateViewController.m */; };
+		374ADB2618DDABB200A629D0 /* GIDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374ADB2418DDABB200A629D0 /* GIDateViewController.xib */; };
+		377DF3C118DDDDC1008051E7 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 377DF3C018DDDDC1008051E7 /* reload.png */; };
+		377DF3C418DEB2D0008051E7 /* GIEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 377DF3C318DEB2D0008051E7 /* GIEvent.m */; };
+		377DF3C818DED46E008051E7 /* GIEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 377DF3C618DED46E008051E7 /* GIEventDetailViewController.m */; };
+		377DF3C918DED46E008051E7 /* GIEventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377DF3C718DED46E008051E7 /* GIEventDetailViewController.xib */; };
+		377DF3CC18DED69E008051E7 /* GIGMSMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 377DF3CB18DED69E008051E7 /* GIGMSMarker.m */; };
+		37F3DF8C18DC3ED300A5CEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DF8B18DC3ED300A5CEBC /* Foundation.framework */; };
+		37F3DF8E18DC3ED300A5CEBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DF8D18DC3ED300A5CEBC /* CoreGraphics.framework */; };
+		37F3DF9018DC3ED300A5CEBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DF8F18DC3ED300A5CEBC /* UIKit.framework */; };
+		37F3DF9618DC3ED300A5CEBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37F3DF9418DC3ED300A5CEBC /* InfoPlist.strings */; };
+		37F3DF9818DC3ED300A5CEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F3DF9718DC3ED300A5CEBC /* main.m */; };
+		37F3DF9C18DC3ED300A5CEBC /* GIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F3DF9B18DC3ED300A5CEBC /* GIAppDelegate.m */; };
+		37F3DF9F18DC3ED300A5CEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F3DF9D18DC3ED300A5CEBC /* Main.storyboard */; };
+		37F3DFA218DC3ED300A5CEBC /* GIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F3DFA118DC3ED300A5CEBC /* GIViewController.m */; };
+		37F3DFA418DC3ED300A5CEBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F3DFA318DC3ED300A5CEBC /* Images.xcassets */; };
+		37F3DFAB18DC3ED400A5CEBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFAA18DC3ED400A5CEBC /* XCTest.framework */; };
+		37F3DFAC18DC3ED400A5CEBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DF8B18DC3ED300A5CEBC /* Foundation.framework */; };
+		37F3DFAD18DC3ED400A5CEBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DF8F18DC3ED300A5CEBC /* UIKit.framework */; };
+		37F3DFB518DC3ED400A5CEBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37F3DFB318DC3ED400A5CEBC /* InfoPlist.strings */; };
+		37F3DFB718DC3ED400A5CEBC /* ynuEventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F3DFB618DC3ED400A5CEBC /* ynuEventTests.m */; };
+		37F3DFCC18DC406C00A5CEBC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC018DC406C00A5CEBC /* AVFoundation.framework */; };
+		37F3DFCD18DC406C00A5CEBC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC118DC406C00A5CEBC /* CoreData.framework */; };
+		37F3DFCE18DC406C00A5CEBC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC218DC406C00A5CEBC /* CoreLocation.framework */; };
+		37F3DFCF18DC406C00A5CEBC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC318DC406C00A5CEBC /* CoreText.framework */; };
+		37F3DFD018DC406C00A5CEBC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC418DC406C00A5CEBC /* GLKit.framework */; };
+		37F3DFD118DC406C00A5CEBC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC518DC406C00A5CEBC /* ImageIO.framework */; };
+		37F3DFD218DC406C00A5CEBC /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC618DC406C00A5CEBC /* libc++.1.dylib */; };
+		37F3DFD318DC406C00A5CEBC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC718DC406C00A5CEBC /* libicucore.dylib */; };
+		37F3DFD418DC406C00A5CEBC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC818DC406C00A5CEBC /* libz.dylib */; };
+		37F3DFD518DC406C00A5CEBC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFC918DC406C00A5CEBC /* OpenGLES.framework */; };
+		37F3DFD618DC406C00A5CEBC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFCA18DC406C00A5CEBC /* QuartzCore.framework */; };
+		37F3DFD718DC406C00A5CEBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFCB18DC406C00A5CEBC /* SystemConfiguration.framework */; };
+		37F3DFDD18DC453900A5CEBC /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F3DFDC18DC453900A5CEBC /* GoogleMaps.framework */; };
+		37F3DFE318DC465400A5CEBC /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37F3DFE218DC465400A5CEBC /* GoogleMaps.bundle */; };
+		37F3DFED18DC67CD00A5CEBC /* GIEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F3DFEB18DC67CD00A5CEBC /* GIEventListViewController.m */; };
+		37F3DFEE18DC67CD00A5CEBC /* GIEventListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F3DFEC18DC67CD00A5CEBC /* GIEventListViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F3DFAE18DC3ED400A5CEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F3DF8018DC3ED300A5CEBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F3DF8718DC3ED300A5CEBC;
+			remoteInfo = ynuEvent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37054B2F18DC6C85008621E7 /* GIPostEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIPostEventViewController.h; sourceTree = "<group>"; };
+		37054B3018DC6C85008621E7 /* GIPostEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIPostEventViewController.m; sourceTree = "<group>"; };
+		37054B3118DC6C85008621E7 /* GIPostEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIPostEventViewController.xib; sourceTree = "<group>"; };
+		37054B3518DD5034008621E7 /* GITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GITableViewCell.h; sourceTree = "<group>"; };
+		37054B3618DD5034008621E7 /* GITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITableViewCell.m; sourceTree = "<group>"; };
+		37054B3818DD5510008621E7 /* GISelectEventPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISelectEventPlaceViewController.h; sourceTree = "<group>"; };
+		37054B3918DD5510008621E7 /* GISelectEventPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISelectEventPlaceViewController.m; sourceTree = "<group>"; };
+		37054B3A18DD5510008621E7 /* GISelectEventPlaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GISelectEventPlaceViewController.xib; sourceTree = "<group>"; };
+		37054B6018DD8326008621E7 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = SOURCE_ROOT; };
+		37054B6118DD8326008621E7 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		37054B6218DD8326008621E7 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		37054B6318DD8326008621E7 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		37054B6418DD8326008621E7 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		37054B6518DD8326008621E7 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		37054B6618DD8326008621E7 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		37054B6718DD8326008621E7 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		37054B6818DD8326008621E7 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = SOURCE_ROOT; };
+		37054B6918DD8326008621E7 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = SOURCE_ROOT; };
+		37054B6A18DD8326008621E7 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = SOURCE_ROOT; };
+		37054B6B18DD8326008621E7 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		37054B6C18DD8326008621E7 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		37054B6D18DD8326008621E7 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = SOURCE_ROOT; };
+		37054B6E18DD8326008621E7 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = SOURCE_ROOT; };
+		37054B6F18DD8326008621E7 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = SOURCE_ROOT; };
+		37054B7018DD8326008621E7 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		37054B7118DD8326008621E7 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = SOURCE_ROOT; };
+		37054B7218DD8326008621E7 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = SOURCE_ROOT; };
+		371C461418DFF608005173E0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		371C461618E00DED005173E0 /* tools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tools.png; path = Images/tools.png; sourceTree = "<group>"; };
+		371C461B18E0109F005173E0 /* GISettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISettingViewController.h; sourceTree = "<group>"; };
+		371C461C18E0109F005173E0 /* GISettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISettingViewController.m; sourceTree = "<group>"; };
+		371C461D18E0109F005173E0 /* GISettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GISettingViewController.xib; sourceTree = "<group>"; };
+		371C462018E01446005173E0 /* bgimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgimage.png; path = Images/bgimage.png; sourceTree = "<group>"; };
+		371C462218E04F9C005173E0 /* GIPostTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIPostTableViewController.h; sourceTree = "<group>"; };
+		371C462318E04F9C005173E0 /* GIPostTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIPostTableViewController.m; sourceTree = "<group>"; };
+		371C462418E04F9C005173E0 /* GIPostTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIPostTableViewController.xib; sourceTree = "<group>"; };
+		374ADB2218DDABB200A629D0 /* GIDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIDateViewController.h; sourceTree = "<group>"; };
+		374ADB2318DDABB200A629D0 /* GIDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIDateViewController.m; sourceTree = "<group>"; };
+		374ADB2418DDABB200A629D0 /* GIDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIDateViewController.xib; sourceTree = "<group>"; };
+		377DF3C018DDDDC1008051E7 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reload.png; path = Images/reload.png; sourceTree = "<group>"; };
+		377DF3C218DEB2D0008051E7 /* GIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIEvent.h; sourceTree = "<group>"; };
+		377DF3C318DEB2D0008051E7 /* GIEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIEvent.m; sourceTree = "<group>"; };
+		377DF3C518DED46E008051E7 /* GIEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIEventDetailViewController.h; sourceTree = "<group>"; };
+		377DF3C618DED46E008051E7 /* GIEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIEventDetailViewController.m; sourceTree = "<group>"; };
+		377DF3C718DED46E008051E7 /* GIEventDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIEventDetailViewController.xib; sourceTree = "<group>"; };
+		377DF3CA18DED69E008051E7 /* GIGMSMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIGMSMarker.h; sourceTree = "<group>"; };
+		377DF3CB18DED69E008051E7 /* GIGMSMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIGMSMarker.m; sourceTree = "<group>"; };
+		37F3DF8818DC3ED300A5CEBC /* ynuEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ynuEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F3DF8B18DC3ED300A5CEBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37F3DF8D18DC3ED300A5CEBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37F3DF8F18DC3ED300A5CEBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37F3DF9318DC3ED300A5CEBC /* ynuEvent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ynuEvent-Info.plist"; sourceTree = "<group>"; };
+		37F3DF9518DC3ED300A5CEBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37F3DF9718DC3ED300A5CEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37F3DF9918DC3ED300A5CEBC /* ynuEvent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ynuEvent-Prefix.pch"; sourceTree = "<group>"; };
+		37F3DF9A18DC3ED300A5CEBC /* GIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIAppDelegate.h; sourceTree = "<group>"; };
+		37F3DF9B18DC3ED300A5CEBC /* GIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIAppDelegate.m; sourceTree = "<group>"; };
+		37F3DF9E18DC3ED300A5CEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37F3DFA018DC3ED300A5CEBC /* GIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIViewController.h; sourceTree = "<group>"; };
+		37F3DFA118DC3ED300A5CEBC /* GIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIViewController.m; sourceTree = "<group>"; };
+		37F3DFA318DC3ED300A5CEBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37F3DFA918DC3ED400A5CEBC /* ynuEventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ynuEventTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F3DFAA18DC3ED400A5CEBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		37F3DFB218DC3ED400A5CEBC /* ynuEventTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ynuEventTests-Info.plist"; sourceTree = "<group>"; };
+		37F3DFB418DC3ED400A5CEBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37F3DFB618DC3ED400A5CEBC /* ynuEventTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ynuEventTests.m; sourceTree = "<group>"; };
+		37F3DFC018DC406C00A5CEBC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		37F3DFC118DC406C00A5CEBC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		37F3DFC218DC406C00A5CEBC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		37F3DFC318DC406C00A5CEBC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		37F3DFC418DC406C00A5CEBC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		37F3DFC518DC406C00A5CEBC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		37F3DFC618DC406C00A5CEBC /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
+		37F3DFC718DC406C00A5CEBC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		37F3DFC818DC406C00A5CEBC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		37F3DFC918DC406C00A5CEBC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		37F3DFCA18DC406C00A5CEBC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		37F3DFCB18DC406C00A5CEBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		37F3DFDC18DC453900A5CEBC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "GoogleMaps-iOS-1.7.2/GoogleMaps.framework"; sourceTree = "<group>"; };
+		37F3DFE218DC465400A5CEBC /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "GoogleMaps-iOS-1.7.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
+		37F3DFEA18DC67CD00A5CEBC /* GIEventListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIEventListViewController.h; sourceTree = "<group>"; };
+		37F3DFEB18DC67CD00A5CEBC /* GIEventListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIEventListViewController.m; sourceTree = "<group>"; };
+		37F3DFEC18DC67CD00A5CEBC /* GIEventListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIEventListViewController.xib; sourceTree = "<group>"; };
+		84549C2406614E2A820D3A5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0708772B6134AB2B928D859 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37F3DF8518DC3ED300A5CEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371C461518DFF608005173E0 /* StoreKit.framework in Frameworks */,
+				37F3DFCC18DC406C00A5CEBC /* AVFoundation.framework in Frameworks */,
+				37F3DFCD18DC406C00A5CEBC /* CoreData.framework in Frameworks */,
+				37F3DFCE18DC406C00A5CEBC /* CoreLocation.framework in Frameworks */,
+				37F3DFCF18DC406C00A5CEBC /* CoreText.framework in Frameworks */,
+				37F3DFD018DC406C00A5CEBC /* GLKit.framework in Frameworks */,
+				37F3DFD118DC406C00A5CEBC /* ImageIO.framework in Frameworks */,
+				37F3DFD218DC406C00A5CEBC /* libc++.1.dylib in Frameworks */,
+				37F3DFD318DC406C00A5CEBC /* libicucore.dylib in Frameworks */,
+				37F3DFD418DC406C00A5CEBC /* libz.dylib in Frameworks */,
+				37F3DFD518DC406C00A5CEBC /* OpenGLES.framework in Frameworks */,
+				37F3DFD618DC406C00A5CEBC /* QuartzCore.framework in Frameworks */,
+				37F3DFD718DC406C00A5CEBC /* SystemConfiguration.framework in Frameworks */,
+				37F3DF8E18DC3ED300A5CEBC /* CoreGraphics.framework in Frameworks */,
+				37F3DF9018DC3ED300A5CEBC /* UIKit.framework in Frameworks */,
+				37F3DFDD18DC453900A5CEBC /* GoogleMaps.framework in Frameworks */,
+				37F3DF8C18DC3ED300A5CEBC /* Foundation.framework in Frameworks */,
+				2C2A25A94E4548A98B9C96FF /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F3DFA618DC3ED400A5CEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F3DFAB18DC3ED400A5CEBC /* XCTest.framework in Frameworks */,
+				37F3DFAD18DC3ED400A5CEBC /* UIKit.framework in Frameworks */,
+				37F3DFAC18DC3ED400A5CEBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37054B3418DD5005008621E7 /* subClass */ = {
+			isa = PBXGroup;
+			children = (
+				37054B3518DD5034008621E7 /* GITableViewCell.h */,
+				37054B3618DD5034008621E7 /* GITableViewCell.m */,
+				377DF3C218DEB2D0008051E7 /* GIEvent.h */,
+				377DF3C318DEB2D0008051E7 /* GIEvent.m */,
+				377DF3CA18DED69E008051E7 /* GIGMSMarker.h */,
+				377DF3CB18DED69E008051E7 /* GIGMSMarker.m */,
+			);
+			name = subClass;
+			sourceTree = "<group>";
+		};
+		37054B5F18DD830A008621E7 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				37054B6018DD8326008621E7 /* AFHTTPClient.h */,
+				37054B6118DD8326008621E7 /* AFHTTPClient.m */,
+				37054B6218DD8326008621E7 /* AFHTTPRequestOperation.h */,
+				37054B6318DD8326008621E7 /* AFHTTPRequestOperation.m */,
+				37054B6418DD8326008621E7 /* AFImageRequestOperation.h */,
+				37054B6518DD8326008621E7 /* AFImageRequestOperation.m */,
+				37054B6618DD8326008621E7 /* AFJSONRequestOperation.h */,
+				37054B6718DD8326008621E7 /* AFJSONRequestOperation.m */,
+				37054B6818DD8326008621E7 /* AFNetworkActivityIndicatorManager.h */,
+				37054B6918DD8326008621E7 /* AFNetworkActivityIndicatorManager.m */,
+				37054B6A18DD8326008621E7 /* AFNetworking.h */,
+				37054B6B18DD8326008621E7 /* AFPropertyListRequestOperation.h */,
+				37054B6C18DD8326008621E7 /* AFPropertyListRequestOperation.m */,
+				37054B6D18DD8326008621E7 /* AFURLConnectionOperation.h */,
+				37054B6E18DD8326008621E7 /* AFURLConnectionOperation.m */,
+				37054B6F18DD8326008621E7 /* AFXMLRequestOperation.h */,
+				37054B7018DD8326008621E7 /* AFXMLRequestOperation.m */,
+				37054B7118DD8326008621E7 /* UIImageView+AFNetworking.h */,
+				37054B7218DD8326008621E7 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		377DF3BF18DDDDB6008051E7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				371C462018E01446005173E0 /* bgimage.png */,
+				371C461618E00DED005173E0 /* tools.png */,
+				377DF3C018DDDDC1008051E7 /* reload.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		37F3DF7F18DC3ED300A5CEBC = {
+			isa = PBXGroup;
+			children = (
+				37F3DF9118DC3ED300A5CEBC /* ynuEvent */,
+				37F3DFB018DC3ED400A5CEBC /* ynuEventTests */,
+				37F3DF8A18DC3ED300A5CEBC /* Frameworks */,
+				37F3DF8918DC3ED300A5CEBC /* Products */,
+				F0708772B6134AB2B928D859 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		37F3DF8918DC3ED300A5CEBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37F3DF8818DC3ED300A5CEBC /* ynuEvent.app */,
+				37F3DFA918DC3ED400A5CEBC /* ynuEventTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37F3DF8A18DC3ED300A5CEBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				371C461418DFF608005173E0 /* StoreKit.framework */,
+				37F3DFE218DC465400A5CEBC /* GoogleMaps.bundle */,
+				37F3DFDC18DC453900A5CEBC /* GoogleMaps.framework */,
+				37F3DFC018DC406C00A5CEBC /* AVFoundation.framework */,
+				37F3DFC118DC406C00A5CEBC /* CoreData.framework */,
+				37F3DFC218DC406C00A5CEBC /* CoreLocation.framework */,
+				37F3DFC318DC406C00A5CEBC /* CoreText.framework */,
+				37F3DFC418DC406C00A5CEBC /* GLKit.framework */,
+				37F3DFC518DC406C00A5CEBC /* ImageIO.framework */,
+				37F3DFC618DC406C00A5CEBC /* libc++.1.dylib */,
+				37F3DFC718DC406C00A5CEBC /* libicucore.dylib */,
+				37F3DFC818DC406C00A5CEBC /* libz.dylib */,
+				37F3DFC918DC406C00A5CEBC /* OpenGLES.framework */,
+				37F3DFCA18DC406C00A5CEBC /* QuartzCore.framework */,
+				37F3DFCB18DC406C00A5CEBC /* SystemConfiguration.framework */,
+				37F3DF8B18DC3ED300A5CEBC /* Foundation.framework */,
+				37F3DF8D18DC3ED300A5CEBC /* CoreGraphics.framework */,
+				37F3DF8F18DC3ED300A5CEBC /* UIKit.framework */,
+				37F3DFAA18DC3ED400A5CEBC /* XCTest.framework */,
+				84549C2406614E2A820D3A5E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F3DF9118DC3ED300A5CEBC /* ynuEvent */ = {
+			isa = PBXGroup;
+			children = (
+				377DF3BF18DDDDB6008051E7 /* Images */,
+				37054B5F18DD830A008621E7 /* AFNetworking */,
+				37054B3418DD5005008621E7 /* subClass */,
+				37F3DF9A18DC3ED300A5CEBC /* GIAppDelegate.h */,
+				37F3DF9B18DC3ED300A5CEBC /* GIAppDelegate.m */,
+				37F3DFE418DC65DC00A5CEBC /* ViewController */,
+				37F3DF9D18DC3ED300A5CEBC /* Main.storyboard */,
+				37F3DFA318DC3ED300A5CEBC /* Images.xcassets */,
+				37F3DF9218DC3ED300A5CEBC /* Supporting Files */,
+			);
+			path = ynuEvent;
+			sourceTree = "<group>";
+		};
+		37F3DF9218DC3ED300A5CEBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37F3DF9318DC3ED300A5CEBC /* ynuEvent-Info.plist */,
+				37F3DF9418DC3ED300A5CEBC /* InfoPlist.strings */,
+				37F3DF9718DC3ED300A5CEBC /* main.m */,
+				37F3DF9918DC3ED300A5CEBC /* ynuEvent-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37F3DFB018DC3ED400A5CEBC /* ynuEventTests */ = {
+			isa = PBXGroup;
+			children = (
+				37F3DFB618DC3ED400A5CEBC /* ynuEventTests.m */,
+				37F3DFB118DC3ED400A5CEBC /* Supporting Files */,
+			);
+			path = ynuEventTests;
+			sourceTree = "<group>";
+		};
+		37F3DFB118DC3ED400A5CEBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37F3DFB218DC3ED400A5CEBC /* ynuEventTests-Info.plist */,
+				37F3DFB318DC3ED400A5CEBC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37F3DFE418DC65DC00A5CEBC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				37F3DFA018DC3ED300A5CEBC /* GIViewController.h */,
+				37F3DFA118DC3ED300A5CEBC /* GIViewController.m */,
+				37F3DFEA18DC67CD00A5CEBC /* GIEventListViewController.h */,
+				37F3DFEB18DC67CD00A5CEBC /* GIEventListViewController.m */,
+				37F3DFEC18DC67CD00A5CEBC /* GIEventListViewController.xib */,
+				377DF3C518DED46E008051E7 /* GIEventDetailViewController.h */,
+				377DF3C618DED46E008051E7 /* GIEventDetailViewController.m */,
+				377DF3C718DED46E008051E7 /* GIEventDetailViewController.xib */,
+				37054B2F18DC6C85008621E7 /* GIPostEventViewController.h */,
+				37054B3018DC6C85008621E7 /* GIPostEventViewController.m */,
+				37054B3118DC6C85008621E7 /* GIPostEventViewController.xib */,
+				371C462218E04F9C005173E0 /* GIPostTableViewController.h */,
+				371C462318E04F9C005173E0 /* GIPostTableViewController.m */,
+				371C462418E04F9C005173E0 /* GIPostTableViewController.xib */,
+				374ADB2218DDABB200A629D0 /* GIDateViewController.h */,
+				374ADB2318DDABB200A629D0 /* GIDateViewController.m */,
+				374ADB2418DDABB200A629D0 /* GIDateViewController.xib */,
+				37054B3818DD5510008621E7 /* GISelectEventPlaceViewController.h */,
+				37054B3918DD5510008621E7 /* GISelectEventPlaceViewController.m */,
+				37054B3A18DD5510008621E7 /* GISelectEventPlaceViewController.xib */,
+				371C461B18E0109F005173E0 /* GISettingViewController.h */,
+				371C461C18E0109F005173E0 /* GISettingViewController.m */,
+				371C461D18E0109F005173E0 /* GISettingViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37F3DF8718DC3ED300A5CEBC /* ynuEvent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F3DFBA18DC3ED400A5CEBC /* Build configuration list for PBXNativeTarget "ynuEvent" */;
+			buildPhases = (
+				02B24A62F80B4A14972A226F /* Check Pods Manifest.lock */,
+				37F3DF8418DC3ED300A5CEBC /* Sources */,
+				37F3DF8518DC3ED300A5CEBC /* Frameworks */,
+				37F3DF8618DC3ED300A5CEBC /* Resources */,
+				4B39E1928B474A319793CE79 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ynuEvent;
+			productName = ynuEvent;
+			productReference = 37F3DF8818DC3ED300A5CEBC /* ynuEvent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37F3DFA818DC3ED400A5CEBC /* ynuEventTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F3DFBD18DC3ED400A5CEBC /* Build configuration list for PBXNativeTarget "ynuEventTests" */;
+			buildPhases = (
+				37F3DFA518DC3ED400A5CEBC /* Sources */,
+				37F3DFA618DC3ED400A5CEBC /* Frameworks */,
+				37F3DFA718DC3ED400A5CEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F3DFAF18DC3ED400A5CEBC /* PBXTargetDependency */,
+			);
+			name = ynuEventTests;
+			productName = ynuEventTests;
+			productReference = 37F3DFA918DC3ED400A5CEBC /* ynuEventTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37F3DF8018DC3ED300A5CEBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Genki Ishibashi";
+				TargetAttributes = {
+					37F3DF8718DC3ED300A5CEBC = {
+						DevelopmentTeam = 5AJXMU3W4X;
+					};
+					37F3DFA818DC3ED400A5CEBC = {
+						TestTargetID = 37F3DF8718DC3ED300A5CEBC;
+					};
+				};
+			};
+			buildConfigurationList = 37F3DF8318DC3ED300A5CEBC /* Build configuration list for PBXProject "ynuEvent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37F3DF7F18DC3ED300A5CEBC;
+			productRefGroup = 37F3DF8918DC3ED300A5CEBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37F3DF8718DC3ED300A5CEBC /* ynuEvent */,
+				37F3DFA818DC3ED400A5CEBC /* ynuEventTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37F3DF8618DC3ED300A5CEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				377DF3C918DED46E008051E7 /* GIEventDetailViewController.xib in Resources */,
+				37F3DFEE18DC67CD00A5CEBC /* GIEventListViewController.xib in Resources */,
+				371C462618E04F9C005173E0 /* GIPostTableViewController.xib in Resources */,
+				371C461718E00DED005173E0 /* tools.png in Resources */,
+				377DF3C118DDDDC1008051E7 /* reload.png in Resources */,
+				37F3DFA418DC3ED300A5CEBC /* Images.xcassets in Resources */,
+				371C462118E01446005173E0 /* bgimage.png in Resources */,
+				37F3DF9618DC3ED300A5CEBC /* InfoPlist.strings in Resources */,
+				37F3DF9F18DC3ED300A5CEBC /* Main.storyboard in Resources */,
+				37F3DFE318DC465400A5CEBC /* GoogleMaps.bundle in Resources */,
+				37054B3318DC6C85008621E7 /* GIPostEventViewController.xib in Resources */,
+				371C461F18E0109F005173E0 /* GISettingViewController.xib in Resources */,
+				374ADB2618DDABB200A629D0 /* GIDateViewController.xib in Resources */,
+				37054B3C18DD5510008621E7 /* GISelectEventPlaceViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F3DFA718DC3ED400A5CEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F3DFB518DC3ED400A5CEBC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B24A62F80B4A14972A226F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B39E1928B474A319793CE79 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37F3DF8418DC3ED300A5CEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37054B7918DD8326008621E7 /* AFURLConnectionOperation.m in Sources */,
+				377DF3CC18DED69E008051E7 /* GIGMSMarker.m in Sources */,
+				37054B7A18DD8326008621E7 /* AFXMLRequestOperation.m in Sources */,
+				37054B7618DD8326008621E7 /* AFJSONRequestOperation.m in Sources */,
+				37054B7418DD8326008621E7 /* AFHTTPRequestOperation.m in Sources */,
+				37F3DF9C18DC3ED300A5CEBC /* GIAppDelegate.m in Sources */,
+				374ADB2518DDABB200A629D0 /* GIDateViewController.m in Sources */,
+				377DF3C418DEB2D0008051E7 /* GIEvent.m in Sources */,
+				37054B3218DC6C85008621E7 /* GIPostEventViewController.m in Sources */,
+				37F3DFA218DC3ED300A5CEBC /* GIViewController.m in Sources */,
+				37F3DFED18DC67CD00A5CEBC /* GIEventListViewController.m in Sources */,
+				37054B3B18DD5510008621E7 /* GISelectEventPlaceViewController.m in Sources */,
+				37054B7518DD8326008621E7 /* AFImageRequestOperation.m in Sources */,
+				37054B7718DD8326008621E7 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				37054B7B18DD8326008621E7 /* UIImageView+AFNetworking.m in Sources */,
+				37F3DF9818DC3ED300A5CEBC /* main.m in Sources */,
+				37054B3718DD5034008621E7 /* GITableViewCell.m in Sources */,
+				37054B7318DD8326008621E7 /* AFHTTPClient.m in Sources */,
+				371C462518E04F9C005173E0 /* GIPostTableViewController.m in Sources */,
+				371C461E18E0109F005173E0 /* GISettingViewController.m in Sources */,
+				37054B7818DD8326008621E7 /* AFPropertyListRequestOperation.m in Sources */,
+				377DF3C818DED46E008051E7 /* GIEventDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F3DFA518DC3ED400A5CEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F3DFB718DC3ED400A5CEBC /* ynuEventTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F3DFAF18DC3ED400A5CEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F3DF8718DC3ED300A5CEBC /* ynuEvent */;
+			targetProxy = 37F3DFAE18DC3ED400A5CEBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37F3DF9418DC3ED300A5CEBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F3DF9518DC3ED300A5CEBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37F3DF9D18DC3ED300A5CEBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F3DF9E18DC3ED300A5CEBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37F3DFB318DC3ED400A5CEBC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F3DFB418DC3ED400A5CEBC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37F3DFB818DC3ED400A5CEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37F3DFB918DC3ED400A5CEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37F3DFBB18DC3ED400A5CEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0708772B6134AB2B928D859 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Akinori Ishii (8MDZYR5AYQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.7.2",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ynuEvent/ynuEvent-Prefix.pch";
+				INFOPLIST_FILE = "ynuEvent/ynuEvent-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.7.2/GoogleMaps.framework",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F83DDF98-190B-49D9-9580-4A7A2D60D7A8";
+				VALID_ARCHS = "armv7s armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37F3DFBC18DC3ED400A5CEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0708772B6134AB2B928D859 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Akinori Ishii (8MDZYR5AYQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.7.2",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ynuEvent/ynuEvent-Prefix.pch";
+				INFOPLIST_FILE = "ynuEvent/ynuEvent-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.7.2/GoogleMaps.framework",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F83DDF98-190B-49D9-9580-4A7A2D60D7A8";
+				VALID_ARCHS = "armv7s armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		37F3DFBE18DC3ED400A5CEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ynuEvent.app/ynuEvent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ynuEvent/ynuEvent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ynuEventTests/ynuEventTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		37F3DFBF18DC3ED400A5CEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ynuEvent.app/ynuEvent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ynuEvent/ynuEvent-Prefix.pch";
+				INFOPLIST_FILE = "ynuEventTests/ynuEventTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37F3DF8318DC3ED300A5CEBC /* Build configuration list for PBXProject "ynuEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F3DFB818DC3ED400A5CEBC /* Debug */,
+				37F3DFB918DC3ED400A5CEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F3DFBA18DC3ED400A5CEBC /* Build configuration list for PBXNativeTarget "ynuEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F3DFBB18DC3ED400A5CEBC /* Debug */,
+				37F3DFBC18DC3ED400A5CEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F3DFBD18DC3ED400A5CEBC /* Build configuration list for PBXNativeTarget "ynuEventTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F3DFBE18DC3ED400A5CEBC /* Debug */,
+				37F3DFBF18DC3ED400A5CEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37F3DF8018DC3ED300A5CEBC /* Project object */;
+}
